@@ -1,0 +1,46 @@
+@import "src/styles/vars";
+.body {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(47, 51, 66, 0.7);
+  z-index: 100000;
+  pointer-events: none;
+}
+.content {
+  width: 610px;
+
+  background-color: $color-white;
+  border-radius: 16px;
+  opacity: 1;
+  padding: 60px 40px;
+}
+.header {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  /* Дефолтные, фоновые/Чёрный/Чёрный */
+
+  color: #2f3342;
+}
+.text {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+  margin-top: 30px;
+}

@@ -1,0 +1,354 @@
+@import "src/styles/vars";
+.body {
+  padding: 40px;
+}
+.header {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.buttonBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 27px;
+  background-color: $color-white;
+  box-shadow: rgba(157, 174, 198, 0.65);
+  &:hover {
+    background-color: #eaeef4;
+  }
+}
+.headerText {
+  padding-left: 16px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: $color-black;
+}
+.content {
+  display: flex;
+  gap: 24px;
+  margin-top: 28px;
+}
+.headText {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: $color-black;
+}
+.userDataConteiner {
+  width: 440px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.userDataContent {
+  padding: 28px;
+}
+.subText {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.subTextMob {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  margin-top: 16px;
+}
+.text {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+  padding-top: 4px;
+}
+.commentDataHead {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  margin-top: 40px;
+}
+.commentDataContainer {
+  background: #ffffff;
+  width: 440px;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+}
+.commentDataContainer {
+  display: flex;
+  padding: 28px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.dateText {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.date {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.postamatHead {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  margin-top: 40px;
+}
+.postamatContainer {
+  background: #ffffff;
+  width: 440px;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.postamatId {
+  margin-top: 28px;
+  margin-left: 28px;
+  display: inline-block;
+  border: 2px solid #2f3342;
+  border-radius: 4px;
+  padding: 8px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+
+  /* Дефолтные, фоновые/Чёрный/Чёрный */
+
+  color: #2f3342;
+}
+.postamatAdress {
+  margin-top: 16px;
+  margin-left: 28px;
+  padding-bottom: 28px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+}
+.reviewContainer {
+  width: 496px;
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.reviewContent {
+  padding: 28px;
+  /* display: flex;
+  align-items: center; */
+}
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  border: 3px solid #30ff6b;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #00b333;
+  background-color: #dff9ee;
+  box-shadow: (0px 0px 8px #9ff3cf);
+}
+.ratingBad {
+    color: $color-red;
+    background-color: $color-white-hover;
+    border: 3px solid #F06071;
+    box-shadow: 0px 0px 8px #F7C1C1;
+  }
+  .ratingNormal {
+    color: #F0BC00;
+    background-color: #FBF4DD;
+    border: 3px solid #FFE586;
+    box-shadow: 0px 0px 8px #F3F09F;
+  }
+  .ratingGood {
+    color: #00b333;
+    background-color: #dff9ee;
+    border: 3px solid #30ff6b;
+    box-shadow: 0px 0px 8px #9FF3CF;
+  }
+.ratingText {
+  margin-left: 20px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.sourceContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.sourceHeader {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.sourceText {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.commentContainer {
+  margin-top: 24px;
+}
+.commentHeader {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+
+  /* Дефолтные, фоновые/Чёрный/Чёрный */
+
+  color: #2f3342;
+}
+.commentText {
+  margin-top: 16px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+}
+.tagsContainer {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  margin-top: 28px;
+}
+.tagsHeader {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.tagsArray {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+.tag {
+  display: block;
+  border: 1px solid #2f3342;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  text-transform: lowercase;
+  color: #2F3342;
+}
+.taskHead {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  margin-top: 28px;
+}
+
+.task {
+  display: inline-block;
+  color:$color-white;
+  border-radius: 4px;
+  background: #2f3342;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 16px;
+  color: #FFFFFF;
+
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.rightSide{
+    margin-bottom: 40px;
+}

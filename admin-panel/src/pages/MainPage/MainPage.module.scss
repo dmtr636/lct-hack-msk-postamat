@@ -1,0 +1,215 @@
+@import "src/styles/vars";
+.body {
+  padding: 40px;
+}
+.welcome {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: $color-black;
+}
+.firstBlock {
+  padding-top: 28px;
+  display: flex;
+  gap: 24px;
+}
+.averageRatig {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  width: 400px;
+  height: 330px;
+}
+.taskInProgress {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  width: 536px;
+  height: 330px;
+}
+.secondBlock {
+  padding-top: 28px;
+}
+.openTask {
+  background: #ffffff;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  width: 960px;
+  height: 330px;
+}
+.averageHead {
+  display: flex;
+  gap: 16px;
+  padding-top: 28px;
+  padding-left: 26px;
+}
+.ratingNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 49px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #00b333;
+
+  background-color: #dff9ee;
+  border: 3px solid #30ff6b;
+}
+.ratingBad {
+  color: $color-red;
+  background-color: $color-white-hover;
+  border: 3px solid #f06071;
+  box-shadow: 0px 0px 8px #f7c1c1;
+}
+.ratingNormal {
+  color: #f0bc00;
+  background-color: #fbf4dd;
+  border: 3px solid #ffe586;
+  box-shadow: 0px 0px 8px #f3f09f;
+}
+.ratingGood {
+  color: #00b333;
+  background-color: #dff9ee;
+  border: 3px solid #30ff6b;
+  box-shadow: 0px 0px 8px #9ff3cf;
+}
+.ratingText {
+  display: flex;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: $color-black;
+  align-items: center;
+  justify-content: center;
+}
+.averageData {
+  margin-top: 28px;
+  display: flex;
+  padding-left: 24px;
+}
+.dataButton {
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+  &:hover {
+    /* background: #d5dde9; */
+    color: #525971;
+  }
+}
+.dataButtonWeek {
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+  &:hover {
+    /* background: #d5dde9; */
+    color: #525971;
+  }
+}
+.dataButtonActive {
+  background: #d5dde9;
+  color: #2f3342;
+}
+.averageShowAll {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0 24px;
+  margin-top: 106px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+  &:hover {
+    color: $color-black;
+  }
+}
+.tasksShowAll {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  padding-right: 24px;
+  margin-top: 34px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+  &:hover {
+    color: $color-black;
+  }
+}
+.arrowTaskActive * {
+  fill: #f73619;
+}
+.taskInProgress {
+  padding-left: 24px;
+  padding-top: 28px;
+}
+.taskHead {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: $color-black;
+}
+.tasks {
+  display: flex;
+  margin-top: 20px;
+  padding-right: 24px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.openTask {
+  padding-left: 24px;
+  padding-top: 28px;
+}
+.tasksIsOpen {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.loading {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  margin: 40px;
+}

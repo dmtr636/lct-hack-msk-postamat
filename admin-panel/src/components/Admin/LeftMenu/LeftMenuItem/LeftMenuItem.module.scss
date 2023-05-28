@@ -1,0 +1,33 @@
+@import "src/styles/vars";
+.navLink {
+  width: 224px;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  padding: 10px 0;
+  align-items: center;
+  padding-left: 14px;
+  &:hover {
+    background: #40465b;
+    border-radius: 8px;
+    opacity: 1;
+  }
+}
+.navLinkActive {
+  opacity: 1;
+}
+.link {
+  display: flex;
+  align-items: center;
+  
+}
+.itemText{
+    padding-left: 12px;
+}

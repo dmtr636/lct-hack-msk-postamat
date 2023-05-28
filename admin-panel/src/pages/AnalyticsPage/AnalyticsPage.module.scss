@@ -1,0 +1,368 @@
+@import "src/styles/vars";
+
+.layout {
+  padding: 40px;
+  max-width: 1040px;
+}
+
+.header {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #2F3342;
+}
+
+.button {
+  display: flex;
+  padding: 17px 38px;
+  background-color: $color-white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(157, 174, 198, 0.45);
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+
+  &:hover {
+    background-color: $color-gray-hover;
+  }
+}
+
+.btnText {
+
+}
+
+.divider {
+  margin: 28px 0;
+  width: 960px;
+  height: 0px;
+  border: 2px solid #9DA1AE;
+  opacity: 0.3;
+}
+
+.topRow {
+  display: flex;
+  margin-top: 28px;
+  gap: 20px;
+  height: 58px;
+
+  .exportButton {
+    margin-left: auto;
+  }
+}
+
+.select {
+  width: 225px;
+}
+
+.rowRating {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 559px 377px;
+  grid-template-rows: 319px;
+  gap: 24px;
+}
+
+.cardHeader {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #2F3342;
+}
+
+.card {
+  padding: 28px 40px;
+  background: white;
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  position: relative;
+}
+
+.avgRating {
+  position: absolute;
+  width: 34px;
+  height: 26px;
+  left: 130px;
+  top: 122px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120%;
+  color: #2F3342;
+  display: flex;
+  justify-content: center;
+}
+
+.avgRatingCard {
+  composes: card;
+  display: grid;
+  grid-template-columns: 214px 214px;
+  gap: 32px
+}
+
+.avgRatingCard2Col {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 62px 159px;
+}
+
+.avgRatingCircle {
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 120%;
+}
+
+.avgRatingCircleGreen {
+  composes: avgRatingCircle;
+  background: #DFF9EE;
+  border: 2px solid #30FF6B;
+  box-shadow: 0px 0px 8px #9FF3CF;
+  color: #00B333;
+}
+
+.avgRatingCircleYellow {
+  composes: avgRatingCircle;
+  background: #FBF4DD;
+  border: 2px solid #FFE586;
+  box-shadow: 0px 0px 8px #F3F09F;
+  color: #F0BC00;
+}
+
+.avgRatingCircleRed {
+  composes: avgRatingCircle;
+  background: #FFF2F4;
+  border: 2px solid #F06071;
+  box-shadow: 0px 0px 8px #F7C1C1;
+  color: #FF1935;
+}
+
+.avgRatingValues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.avgRatingValuesHeader {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  color: #2F3342;
+}
+
+.avgRatingValuesDescription {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #9DA1AE;
+  margin-right: -20px;
+}
+
+.cardRatingSeries {
+  composes: card;
+  overflow: visible;
+  padding: 12px;
+}
+
+.fullWidthRow {
+  margin-top: 40px;
+}
+
+.reviewCategoriesCard {
+  composes: card;
+  position: relative;
+  height: 358px;
+  display: grid;
+  grid-template-columns: 612px 201px;
+  gap: 48px;
+
+  .line {
+    position: absolute;
+    width: 326px;
+    height: 0px;
+    left: 510px;
+    top: 180px;
+    opacity: 0.5;
+    border: 1px solid #9DA1AE;
+    transform: rotate(90deg);
+  }
+
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 13.5px;
+    margin-right: -20px;
+
+    .row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: #2F3342;
+    }
+
+    .circle {
+      width: 22px;
+      height: 22px;
+      background: #FF7AED;
+      border-radius: 50%;
+    }
+
+    .count {
+      margin-left: -4px;
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: #9DA1AE;
+    }
+  }
+}
+
+.reviewCategoriesPercentages {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .circle {
+      margin: 16px;
+      width: 22px;
+      height: 22px;
+      background: #FF7AED;
+      border-radius: 50%;
+    }
+
+    .value {
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 120%;
+      color: #2F3342;
+    }
+  }
+}
+
+.appliedSettingsCard {
+  position: relative;
+  background: #FFFFFF;
+  padding: 28px;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+  margin-bottom: 40px;
+  animation: enter ease-out 0.25s;
+  transform-origin: top;
+
+  @keyframes enter {
+    from {transform: scaleY(0)}
+    to {transform: scaleY(1)}
+  }
+
+  .header {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #2F3342;
+    cursor: pointer;
+    user-select: none;
+
+    .count {
+      color: #9DA1AE
+    }
+  }
+
+  .expandButton {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    padding: 15px 10px;
+    border-radius: 50%;
+    transition: all ease-out 0.2s;
+
+    &:hover {
+      background: #DEE4ED;
+    }
+  }
+
+  .chips {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    padding: 7px 8px 7px 12px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #2F3342;
+    border-radius: 4px;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #2F3342;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    .clearButton {
+      width: 28px;
+      height: 28px;
+      padding: 2px;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background: #DEE4ED;
+      }
+    }
+  }
+}

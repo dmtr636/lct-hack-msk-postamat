@@ -1,0 +1,101 @@
+@import "src/styles/vars";
+.body {
+  width: 636px;
+  height: 77px;
+  background: #f5f6f8;
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    background: #eaeef4;
+  }
+}
+.rating {
+  width: 50px;
+  height: 75px;
+  background: #00b333;
+  border-radius: 8px 0px 8px 8px;
+  margin-left: 1px;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: $color-white;
+}
+.type {
+  border: 1px solid #2f3342;
+  border-radius: 4px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-transform: lowercase;
+  padding: 4px 8px;
+  color: #2f3342;
+}
+.content {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+.categories {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.address {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+  margin-top: 6px;
+}
+.number {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+
+  margin-right: 24px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.id {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  padding: 10px 0;
+  background: $color-black;
+  color: $color-white;
+  border-radius: 4px;
+}
+.date {
+  width: 50px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+}

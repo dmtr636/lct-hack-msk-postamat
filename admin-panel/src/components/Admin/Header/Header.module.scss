@@ -1,0 +1,65 @@
+@import "src/styles/vars";
+.body {
+  height: 86px;
+  width: 100%;
+  background-color: $color-white;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  display: flex;
+  cursor: pointer;
+  /* margin-right: 40px; */
+  align-items: center;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+.buttonText {
+  margin-left: 8px;
+}
+.buttonBlock {
+  display: flex;
+  cursor: pointer;
+  margin-right: 40px;
+  align-items: center;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+
+  display: flex;
+  gap: 30px;
+  &:hover {
+    opacity: 1;
+  }
+}
+.video {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  opacity: 0.5;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+
+  &:hover {
+    opacity: 1;
+  }
+}

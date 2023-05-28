@@ -1,0 +1,102 @@
+@import "src/styles/vars";
+.body {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(47, 51, 66, 0.7);
+  z-index: 1000;
+}
+.content {
+  width: 610px;
+  height: 335px;
+  background-color: $color-white;
+  border-radius: 16px;
+  opacity: 1;
+}
+.contentSmall {
+  width: 610px;
+  height: 162px;
+  background-color: $color-white;
+  border-radius: 16px;
+  opacity: 1;
+}
+.containerSmall {
+  /* padding-top: 12px; */
+  padding-left: 28px;
+  padding-right: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container {
+  padding: 28px 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.containerLoad {
+  padding: 28px 48px;
+}
+.header {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.02em;
+  color: $color-black;
+  padding-top: 28px;
+}
+.text {
+  width: 320px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+  padding-top: 30px;
+}
+.textError {
+  width: 400px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+  padding-top: 30px;
+}
+.containerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  &:hover {
+    background: #dee4ed;
+    border-radius: 27px;
+  }
+}
+.containerButtonSmall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-top: 28px;
+  &:hover {
+    background: #dee4ed;
+    border-radius: 27px;
+  }
+}
+.containerMain {
+  padding: 12px;
+}

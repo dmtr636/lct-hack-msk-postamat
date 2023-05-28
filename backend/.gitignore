@@ -1,0 +1,8 @@
+.venv
+venv
+.idea
+*.pyc
+db.sqlite3
+info.log
+config/settings/dev.py
+config/settings/prod.py

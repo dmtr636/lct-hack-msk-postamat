@@ -1,0 +1,42 @@
+@import "src/styles/vars";
+.body {
+  width: 240px;
+  height: 100vh;
+  background-color: $color-black;
+  color: $color-black-nonactive;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  position: fixed;
+}
+.content {
+  margin: 28px 8px;
+  /*   position: relative; */
+}
+.logo {
+  padding-left: 12px;
+}
+.button {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 11.5px;
+  background: #ff1935;
+
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 12px;
+  &:hover {
+    background: #f06071;
+  }
+}
+.hi{
+  display: none;
+}

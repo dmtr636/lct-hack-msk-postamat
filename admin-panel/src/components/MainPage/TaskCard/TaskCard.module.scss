@@ -1,0 +1,50 @@
+@import "src/styles/vars";
+.body {
+  min-width: 448px;
+  height: 77px;
+  background-color: #f5f6f8;
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: #eaeef4;
+  }
+}
+.content {
+  display: flex;
+  padding: 15px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.typeProblem {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: $color-black;
+  letter-spacing: 0.01em;
+}
+.address {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  padding-top: 6px;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+}
+.date {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: $color-black-nonactive;
+ /*  padding-top: 6px; */
+}
+/* .text{
+    justify-content: flex-start;
+}
+ */

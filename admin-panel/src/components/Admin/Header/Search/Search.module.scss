@@ -1,0 +1,39 @@
+@import "src/styles/vars";
+.input {
+  border-radius: 8px;
+  background-color: #e2e7ee;
+  padding: 14px 24px;
+  width: 690px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  margin-left: 40px;
+
+  padding-right: 40px;
+}
+.button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  background: #ff1935;
+  width: 73px;
+  height: 48px;
+  border-radius: 0px 8px 8px 8px;
+  &:hover{
+    background: #F06071;
+    cursor: pointer;
+  }
+  &:disabled{
+    background: #A0A0A0;;
+  }
+
+}

@@ -1,0 +1,28 @@
+@import "src/styles/vars";
+.body {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-gray;
+  background-image: url("../../assets/img/loginPageBG.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.content {
+ 
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10%;
+  height: 100vh;
+}
+.inputText {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+   letter-spacing: 0.01em;
+  color: $color-black;
+}

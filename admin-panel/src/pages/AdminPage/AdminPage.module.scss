@@ -1,0 +1,30 @@
+@import "src/styles/vars";
+.body {
+  display: flex;
+  background-color: #d5dde9;
+  min-height: 100vh;
+}
+.content {
+  width: 100%;
+  margin-left: 240px;
+}
+.scrollToTopButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 36px;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 999;
+  background: #2f3342;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  &:hover {
+    background: #525971;
+    /* Тень для белых блоков */
+
+    box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  }
+}

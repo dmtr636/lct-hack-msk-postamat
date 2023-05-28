@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: overlay;
+  background: white !important;
+  color: #2f3342;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-drag: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+button:disabled {
+  cursor: initial;
+}
+
+img {
+  display: block;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+input::placeholder {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+}

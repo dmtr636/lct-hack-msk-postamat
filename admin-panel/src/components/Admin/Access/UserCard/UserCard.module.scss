@@ -1,0 +1,57 @@
+@import "src/styles/vars";
+.body {
+  width: 450px;
+  height: 162px;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 16px;
+}
+.info {
+  padding-top: 6px;
+  padding-left: 28px;
+}
+.block {
+  padding-top: 16px;
+}
+.name {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: $color-black;
+  letter-spacing: 0.01em;
+}
+.subname {
+  color: $color-black-nonactive;
+  padding-top: 4px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.delBtn * {
+  stroke: #9da1ae;
+}
+.delBtnHover * {
+  stroke: #f73619;
+}
+.button {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 16px;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff2f4;
+    border-radius: 27px;
+  }
+}

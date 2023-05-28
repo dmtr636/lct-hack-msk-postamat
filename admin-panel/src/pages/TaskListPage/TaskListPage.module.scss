@@ -1,0 +1,346 @@
+@import "src/styles/vars";
+
+.layout {
+  padding: 40px;
+  max-width: 1040px;
+}
+
+.header {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #2F3342;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 17px 38px;
+  background-color: $color-white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(157, 174, 198, 0.45);
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+
+  &:hover {
+    background-color: $color-gray-hover;
+  }
+}
+
+.btnText {
+
+}
+
+.divider {
+  margin: 28px 0;
+  width: 960px;
+  height: 0px;
+  border: 2px solid #9DA1AE;
+  opacity: 0.3;
+}
+
+.topRow {
+  display: flex;
+  margin-top: 28px;
+  gap: 20px;
+
+  .exportButton {
+    margin-left: auto;
+  }
+}
+
+.appliedSettingsCard {
+  width: 100%;
+  height: 58px;
+  position: relative;
+  background: #FFFFFF;
+  padding: 14px 28px;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 8px;
+  //animation: enter ease-out 0.25s;
+  //transform-origin: top;
+  //
+  //@keyframes enter {
+  //  from {transform: scaleY(0)}
+  //  to {transform: scaleY(1)}
+  //}
+
+  .header {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    color: #2F3342;
+    cursor: pointer;
+    user-select: none;
+
+    .count {
+      color: #9DA1AE
+    }
+  }
+
+  .expandButton {
+    position: absolute;
+    top: 8px;
+    right: 21px;
+    padding: 15px 10px;
+    border-radius: 50%;
+    transition: all ease-out 0.2s;
+
+    &:hover {
+      background: #DEE4ED;
+    }
+  }
+
+  .chips {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 74px;
+    background: white;
+    padding: 28px;
+    border-radius: 8px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    z-index: 100;
+    box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  }
+
+  .chip {
+    padding: 7px 8px 7px 12px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #2F3342;
+    border-radius: 4px;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    color: #2F3342;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+
+    .clearButton {
+      width: 28px;
+      height: 28px;
+      padding: 2px;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background: #DEE4ED;
+      }
+    }
+  }
+}
+
+.h2 {
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  margin-top: 40px;
+
+  .count {
+    color: #9DA1AE;
+  }
+}
+
+.list {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  height: 77px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 12px rgba(157, 174, 198, 0.65);
+  border-radius: 8px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #2F3342;
+
+  &:hover {
+    background: #EAEEF4;
+
+    .rating {
+      border-right: solid #DBDFE6 2px;
+    }
+  }
+
+  .rating {
+    padding: 12px 22px 12px 24px;
+    border-right: solid #EBECEF 2px;
+  }
+
+  .info {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .category {
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #2F3342;
+  }
+
+  .address {
+    text-align: left;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #9DA1AE;
+  }
+
+  .right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+
+    .id {
+      background: #2F3342;
+      border-radius: 4px;
+      padding: 10px;
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+      width: 100px;
+      white-space: nowrap;
+    }
+
+    .date {
+      margin-left: 24px;
+      font-family: 'TT Firs Neue';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      color: #9DA1AE;
+      width: 80px;
+    }
+  }
+}
+
+.tabsRow {
+  display: flex;
+  gap: 20px;
+  height: 56px;
+
+  .tab {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 17px 38px;
+    border-radius: 8px;
+    font-family: 'TT Firs Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    //opacity: 0.5;
+    border: 3px solid #2F3342;
+    color: #2F3342;
+
+    &:hover {
+      background: #EAEEF4;
+    }
+
+    &.active {
+      border: none;
+      color: #FFFFFF;
+      img {
+        filter: brightness(10);
+      }
+    }
+  }
+
+  .tabGreen {
+    &.active {
+      background: #00B333;
+      &:hover {
+        background: #00B333;
+      }
+    }
+  }
+
+  .tabYellow {
+    &.active {
+      background: #F0BC00;
+      &:hover {
+        background: #F0BC00;
+      }
+    }
+  }
+
+  .tabRed {
+    &.active {
+      background: #FF1935;
+      &:hover {
+        background: #FF1935;
+      }
+    }
+  }
+}
+
+.sort {
+  margin-left: auto;
+}
+
+.noResults {
+  margin-top: 20px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #9DA1AE;
+}

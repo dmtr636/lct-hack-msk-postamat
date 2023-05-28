@@ -1,0 +1,32 @@
+@import "src/styles/vars";
+.button {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: $color-white;
+  padding: 17px 38px;
+  border-radius: 8px;
+}
+.redButton {
+  background-color: $color-red;
+  color: $color-white;
+  &:hover {
+    background-color: $color-red-hover;
+  }
+  &:disabled{
+    background: #D5DDE9;
+    
+  }
+}
+.whiteButton {
+  border: 3px solid $color-red;
+  background-color: $color-white;
+  padding: 14px 35px;
+  color: $color-red;
+  &:hover{
+    background-color: $color-white-hover;
+  }
+}

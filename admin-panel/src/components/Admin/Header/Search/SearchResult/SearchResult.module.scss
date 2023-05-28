@@ -1,0 +1,87 @@
+@import "src/styles/vars";
+.body {
+  background-color: $color-white;
+  min-height: 100vh;
+  padding: 0 40px;
+  padding-bottom: 40px;
+  /* width: 980px; */
+}
+.divider {
+  margin-top: 28px;
+  width: 636px;
+  height: 2px;
+  background-color: #9da1ae;
+  opacity: 0.3;
+}
+.header {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+}
+.head {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #2f3342;
+}
+.subHead {
+  padding-top: 28px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: $color-black;
+  letter-spacing: 0.01em;
+}
+.subHeadText {
+  width: 635px;
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-black-nonactive;
+  letter-spacing: 0.01em;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    color: #2f3342;
+  }
+}
+.cardBlock {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.button {
+  margin-left: 285px;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #dee4ed;
+    border-radius: 27px;
+  }
+}
+.wrongSearch {
+  font-family: "TT Firs Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #9da1ae;
+  padding-top: 28px;
+}
+.arrowActive * {
+  fill: #f73619;
+}
