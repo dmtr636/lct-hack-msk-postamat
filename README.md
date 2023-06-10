@@ -5,8 +5,8 @@
 Адрес: https://msk-postamat.online/
 
 Данные для входа:
-Почта: root@msk-postamat.ru
-Пароль: root
+- Почта: root@msk-postamat.ru
+- Пароль: root
 
 Руководство пользователя:
 https://drive.google.com/file/d/1Tk-nru1anuZX-L99ZJVY0GvE6JPesqv8/view?usp=share_link
