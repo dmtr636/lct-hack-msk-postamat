@@ -10,8 +10,6 @@ import { domain } from "../../constants/config";
 import { SuccesfullModal } from "../../components/Admin/Access/AccessScreens/Modal/SuccesfullModal";
 import { ErrorModal } from "../../components/Admin/Access/AccessScreens/Modal/Error";
 import { UserDel } from "../../components/Admin/Access/AccessScreens/Modal/userDel";
-import { DeleteScreenSuccesfull } from "../../components/Admin/Access/AccessScreens/DeleteScreenSuccesfull/DeleteScreenSuccesfull";
-
 
 export const AccessPage = () => {
 

@@ -46,7 +46,7 @@ export const SearchField = observer(() => {
           value={searchValue}
           className={styles.input}
           type="text"
-          placeholder="ID комментария или задачи, адрес постамата, телефон клиента"
+          placeholder="ID отзыва или задачи, адрес постамата, телефон клиента"
         />
         <button
           disabled={searchValue.length===0}

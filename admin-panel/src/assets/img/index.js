@@ -31,8 +31,11 @@ import taskInProgressBlack from "./task/taskInProgressBlack.svg"
 import taskArchiveBlack from "./task/taskArchiveBlack.svg"
 import taskCompleted from "./task/taskCompleted.svg"
 import video from "./video.svg"
+import mapPin from "./map-pin.svg"
+import pinRed from "./pinRed.svg"
 
 export {
+    mapPin,
     video,
     taskCompleted,
     taskOpenBlack,
@@ -65,5 +68,6 @@ export {
     error,
     xmark,
     arrowBack,
-    postamats
+    postamats,
+    pinRed
 }

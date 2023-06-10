@@ -1,5 +1,40 @@
 @import "src/styles/vars";
 
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(47, 51, 66, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+
+.overlayContent {
+  width: 1061px;
+  height: 570px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.address {
+  margin-top: 20px;
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  color: #2F3342;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .layout {
   padding: 40px;
   max-width: 1040px;
@@ -34,7 +69,8 @@
 }
 
 .btnText {
-
+  padding-left: 10px;
+  color: $color-black;
 }
 
 .divider {
@@ -47,6 +83,7 @@
 
 .topRow {
   display: flex;
+  justify-content: space-between;
   margin-top: 28px;
   gap: 20px;
 

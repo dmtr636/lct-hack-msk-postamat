@@ -10,6 +10,7 @@ import {FilterPostamat} from "../../components/analytics/FilterPostamat/FilterPo
 import chevronIcon from "../../assets/img/select/chevron.svg"
 import xMark from "../../assets/img/Xmark.svg"
 import {postamatStore} from "../../mobxStore/postamatStore";
+import * as XLSX from "xlsx";
 
 const COLORS = ['#30FF6B', '#FFE586', '#FF4D4D'];
 
@@ -63,6 +64,17 @@ export const AnalyticsPage = observer(() => {
         pdf.save("Аналитика.pdf");
     };
 
+    function exportToExcel() {
+        const workbook = XLSX.utils.book_new();
+        const sheet1 = XLSX.utils.json_to_sheet(analyticsStore.ratingSeriesFormatted);
+        const sheet2 = XLSX.utils.json_to_sheet(analyticsStore.appliedReviewCategories as any);
+        const sheet3 = XLSX.utils.json_to_sheet(analyticsStore.appliedTaskCategories as any);
+        XLSX.utils.book_append_sheet(workbook, sheet1, 'Средняя оценка');
+        XLSX.utils.book_append_sheet(workbook, sheet2, 'Категории');
+        XLSX.utils.book_append_sheet(workbook, sheet3, 'Задачи');
+
+        XLSX.writeFile(workbook, 'Аналитика.xlsx');
+    }
     const getTopRow = () => {
         return (
             <div className={styles.topRow}>
@@ -75,9 +87,16 @@ export const AnalyticsPage = observer(() => {
                     onChange={(value) => analyticsStore.period = value}
                     className={styles.select}
                 />
-                <div className={styles.exportButton}>
+                <div className={styles.exportButton2}>
+                    <button className={styles.button} onClick={() => {
+                        exportToExcel();
+                    }}>
+                        <p className={styles.btnText}>XLS</p>
+                    </button>
+                </div>
+                <div>
                     <button className={styles.button} onClick={handleDownloadImage}>
-                        <p className={styles.btnText}>Экспорт в PDF</p>
+                        <p className={styles.btnText}>PDF</p>
                     </button>
                 </div>
             </div>
